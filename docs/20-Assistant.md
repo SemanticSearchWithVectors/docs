@@ -35,10 +35,10 @@ The following keys are defined in the `.env` file:
 
 ## Cloud API Keys
 
-The Home Assistant uses the following cloud services:
+The project uses the following cloud service:
 
 1. [OpenAI](https://platform.openai.com) chat and depending on your configuration, the `Whisper` speech to text transcriber. The OpenAI API key is used to call the OpenAI Chat Completion API and extracting OpenAI Functions.
-2. The [Weather API](https://www.weatherapi.com/) to get weather data. This data is used to `ground` the GPT prompts the assistant generates.
+
 
 Next you will need to create accounts and get API keys for the cloud services. The API keys are stored in a `.env` file in the `client` folder of the repo you cloned. As you create the API keys, add them to the `.env` file.
 
@@ -51,26 +51,17 @@ Create an OpenAI account and get an API key.
 3. Update the OPENAI_API_KEY key in the `.env` file with the API key.
 4. Save the updated `.env` file.
 
-### Weather API
 
-Create a Weather API account and get an API key.
-
-1. Sign up for a [Weather API account](https://www.weatherapi.com/signup.aspx).
-2. Create a free [Weather API key](https://www.weatherapi.com/my/).
-3. Update the WEATHER_API_KEY key in the `.env` file with the API key.
-4. Save the updated `.env` file.
 
 ## Install prerequisites
 
-1. Install [Python](https://www.python.org/downloads) version 3.8 ~ 3.10. The [Whisper library](https://pypi.org/project/openai-whisper/) is supported on Python 3.8 to 3.10.
+1. Install the latest version of [Python](https://www.python.org/downloads).
 
 ## Install OS Dependencies
 
 ### Linux
 
-```bash
-sudo apt-get install portaudio19-dev python3-pyaudio python3-tk
-```
+
 
 
 ## Install the required Python packages:
@@ -86,13 +77,13 @@ sudo apt-get install portaudio19-dev python3-pyaudio python3-tk
     Windows
 
     ```pwsh
-    python -m venv .assistant
+    python -m venv .embedding
     ```
 
     Linux and macOS
 
     ```bash
-    python3 -m venv .assistant
+    python3 -m venv .embedding
     ```
 
 3. Activate the Python virtual environment:
@@ -100,13 +91,13 @@ sudo apt-get install portaudio19-dev python3-pyaudio python3-tk
     Windows
 
     ```pwsh
-    ./.assistant/Scripts/activate
+    ./.embedding/Scripts/activate
     ```
 
     Linux and macOS
 
     ```bash
-    source .assistant/bin/activate
+    source .embedding/bin/activate
     ```
 
 4. Install the required Python packages:
@@ -137,7 +128,7 @@ There are three modes to use Whisper speech to text transcriber. The default mod
 
 1. `local`: The Whisper speech to text transcription is done locally on the device. This is the default mode and free mode. The speed will depend on the hardware capabilities of your computer. The first time the Whisper speech to text transcriber is used, it will download the transcriber model from the internet. This will take a few minutes.
 2. `openai`: The Whisper speech to text transcription is done using the OpenAI API Audio service which maybe a lot faster that transcribing speech on your computer. This is a paid service, review [OpenAI Audio Model Pricing](https://openai.com/pricing/) for more information.
-3. `gpu`: You can run a Whisper REST endpoint on your own NVidia GPU. For more information, review the [Whisper REST API](../Whisper-Server/Whisper-Server-Setup) docs.
+
 
 ## Run the home assistant app
 

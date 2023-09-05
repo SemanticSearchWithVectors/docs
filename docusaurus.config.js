@@ -6,11 +6,11 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: "Build a home assistant with OpenAI Whisper and Functions",
-  tagline: "Build a home assistant with OpenAI Whisper and Functions",
+  title: "Build ConferenceGPT with OpenAI Embeddings and OpenAI Functions",
+  tagline: "Build ConferenceGPT with OpenAI Embeddings and OpenAI Functions",
 
-  url: "https://gloveboxes.github.io/",
-  baseUrl: "/OpenAI-Whisper-Transcriber-Sample/",
+  url: "https://SemanticSearchWithVectors.github.io/",
+  baseUrl: "/docs/",
 
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "throw",
@@ -20,8 +20,8 @@ const config = {
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: "gloveboxes", // Usually your GitHub org/user name.
-  projectName: "OpenAI-Whisper-Transcriber-Sample", // Usually your repo name.
+  organizationName: "SemanticSearchWithVectors", // Usually your GitHub org/user name.
+  projectName: "docs", // Usually your repo name.
 
   deploymentBranch: "gh-pages", // Branch that GitHub pages will deploy from.
 
@@ -43,7 +43,7 @@ const config = {
           sidebarPath: require.resolve("./sidebars.js"),
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl: "https://github.com/gloveboxes/OpenAI-Whisper-Transcriber-Sample/tree/master/docs/",
+          editUrl: "https://github.com/SemanticSearchWithVectors/docs",
         },
         blog: false,
         theme: {
@@ -57,7 +57,7 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: "Build a home assistant with OpenAI Whisper and Functions.",
+        title: "Build ConferenceGPT with OpenAI Embeddings and OpenAI Functions.",
         logo: {
           alt: "My Site Logo",
           src: "img/Azure-OpenAI-Services.svg",
@@ -67,7 +67,7 @@ const config = {
       footer: {
         style: "dark",
         links: [],
-        copyright: `Copyright © ${new Date().getFullYear()} Build a home assistant with OpenAI Whisper and Functions Workshop. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Build ConferenceGPT with OpenAI Embeddings and OpenAI Functions Workshop. Built with Docusaurus.`,
       },
       prism: {
         theme: lightCodeTheme,

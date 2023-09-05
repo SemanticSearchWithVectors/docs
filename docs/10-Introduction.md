@@ -57,7 +57,7 @@ The agent flow is:
 There are two samples:
 
 1. [Home Assistant](Assistant) - A simple home assistant that can turn on and off lights, and set the temperature.
-2. [Transcribe with Whisper](Whisper-Client/Whisper-Client-Setup) - A sample that demonstrates how to transcribe audio files with the Whisper model.
+2. [Transcribe with Whisper](40-search-client/41-Whisper-Client-Setup.md) - A sample that demonstrates how to transcribe audio files with the Whisper model.
 
 <!--  ## Running OpenAI Whisper Sample
 
